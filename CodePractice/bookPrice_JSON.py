@@ -22,4 +22,3 @@ with open('C:\\Users\\lm\\OneDrive - American International University-Banglades
             print(i['price'])
             #>>14
             assert i['price'] == 14
-#
