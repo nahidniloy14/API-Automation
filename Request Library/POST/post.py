@@ -1,5 +1,10 @@
 #post request is used to submitting data from an html form and uploading files
 #psost request allows larger amount of resources to be sent in a single request
+# headers will pass the http request
+# args will show the parameters
+#the dictionary past through the post request is submitted to our server and shown in the form object within the response body
+
+
 import requests
 
 payload={"firstname":"John","lastname":"Smith"}#dictionary
@@ -31,8 +36,16 @@ print(r.text)#will return the response body which is decoded by the request libr
 #   "origin": "103.170.172.202",
 #   "url": "https://httpbin.org/post"
 # }
-
-# headers will pass the http request
-# args will show the parameters
-#the dictionary past through the post request is submitted to our server and shown in the form object within the response body
+#post method 2
+response8 = requests.post ('https://httpbin.org/post',data ={'Name':'Niloy'})
+print (response8.text )
+# "form": {
+#     "Name": "Niloy"
+# },
+#post method 3
+response9 = requests.post ('https://httpbin.org/post',json ={'Name':'Niloy'})
+print (response9.text )
+# "json": {
+#     "Name": "Niloy"
+# }
 
