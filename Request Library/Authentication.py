@@ -1,3 +1,4 @@
+#devoloper.github.com you can look for authentication
 import requests
 url="https://api.github.com/user"
 authResponse=requests.get(url,auth=("nahidniloy14","1414"))#(url,auth=(username,password))
