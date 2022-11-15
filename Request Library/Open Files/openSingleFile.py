@@ -2,13 +2,7 @@ import requests
 
 url="https://httpbin.org/post"
 #post will receive data from a form
-csvfile=[
-    ('copy1',('Postman.csv',open('Postman.csv','rb'),'csv')),
-    ('copy2',('Postman.csv',open('Postman.csv', 'rb'), 'csv'))
-]
-
-#to open multiple files we have to use the lsit of tuples
-#(identifier,(filename,openfunction(filename,filemode),filetype)
+csvfile={'file':open('Postman.csv', 'rb')}
 # open function has two parameter file name and file mode
 # "r" - Read - Default value. Opens a file for reading, error if the file does not exist
 # "a" - Append - Opens a file for appending, creates the file if it does not exist

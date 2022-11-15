@@ -13,3 +13,7 @@ print(events[0])
 # print(events[0]['id'])
 # 22330737886
 
+response3 = requests.get ("https://jsonplaceholder.typicode.com/users")
+j=response3.json() #retrive JSON
+print(j[0])
+print(j[0]['name'])
