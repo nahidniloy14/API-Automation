@@ -1,6 +1,5 @@
 #http://216.10.245.166/Library/GetBook.php?AuthorName=somename---Query Parameter
 #http://216.10.245.166/Library/GetBook.php/AuthorName=somename---Form Parameter
-import configparser
 import requests
 import json
 from payload import *
