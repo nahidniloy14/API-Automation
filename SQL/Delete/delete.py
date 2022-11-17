@@ -15,4 +15,5 @@ conn.commit()
 # query="update apidevelop.customerInfo where CourseName = %s"
 # data=("Jmeter")
 # cursor.execute(query,data)
-# conn.commit()#after delete we have to commit in connection level
+# conn.commit()
+#after delete we have to commit in connection level
