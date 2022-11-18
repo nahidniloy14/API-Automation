@@ -14,7 +14,7 @@ from Utilities.configuration import *
 #------------------------------------PMO EXECUTION STARTED------------------------------------------------------------
 #Step 1
 # config=configparser.ConfigParser() #this config variable can now drive all our ini files
-# config.read("CodePractice/Libray API/Utilities/properties.ini")#copy the path of the ini file
+# config.read("CodePractice_SQL/Libray API/Utilities/properties.ini")#copy the path of the ini file
 # response=requests.get(config["API"]["endpoint"]+"/Library/GetBook.php",
 #              params={'AuthorName':'Rahul Shetty2'},)
 #Step 2
