@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/API AUTOMATION.iml" filepath="$PROJECT_DIR$/.idea/API AUTOMATION.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../BDD Framework/.idea/BDD Framework.iml" filepath="$PROJECT_DIR$/../BDD Framework/.idea/BDD Framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../pythonProject/.idea/pythonProject.iml" filepath="$PROJECT_DIR$/../../pythonProject/.idea/pythonProject.iml" />
+    </modules>
+  </component>
+</project>
