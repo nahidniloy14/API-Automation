@@ -1,4 +1,4 @@
-from SQL.CodePractice_SQL.IntegrateDatabaseUsingAPI.configurationDB import *
+from SQL.IntegrateDatabaseUsingAPI.configurationDB import *
 
 def buildPayloadFromDB(query):
     row=getQuery(query)

@@ -1,8 +1,6 @@
 import requests
-import json
-from SQL.CodePractice_SQL.IntegrateDatabaseUsingAPI.configurationDB import *
-from SQL.CodePractice_SQL.IntegrateDatabaseUsingAPI.payloadDB import *
-from SQL.CodePractice_SQL.IntegrateDatabaseUsingAPI.resourceDB import *
+from SQL.IntegrateDatabaseUsingAPI.payloadDB import *
+from SQL.IntegrateDatabaseUsingAPI.resourceDB import *
 query ='select * from apidevelop.books '
 
 #ADD BOOK
