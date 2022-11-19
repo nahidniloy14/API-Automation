@@ -17,5 +17,5 @@ url2=getConfig()["API"]["endpoint"]+ApiResources.deleteBook
 deleteBook_response=requests.post(url2,json={"ID":bookID})
 
 json_response2=deleteBook_response.json()
-print(json_response2["msg"])
+print(json_response2["msg"]
 

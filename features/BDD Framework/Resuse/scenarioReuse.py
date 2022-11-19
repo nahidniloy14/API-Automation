@@ -14,15 +14,16 @@ def step(context):
     context.headers = {"Content-Type": "application/json"}
     context.payload = buildPayloadFromDB("dummy")
 
-
+#naming convention should be same for all scenario which are selected for reuse as context.response
 @when(u'We execute post method')
 def step_impl(context):
-    context.addBook_response = requests.post(context.url, json=context.payload, headers=context.headers)
+    context.response = requests.post(context.url, json=context.payload, headers=context.headers)
 
 
 @then(u'Book is suceessfully added')
 def step_impl(context):
-    print(context.addBook_response.json())
-    json_response = context.addBook_response.json()
+    print(context.response.json())
+    json_response = context.response.json()
     context.bookID = json_response["ID"]
     print(context.bookID)
+    assert json_response["Msg"] == "successfully added"
