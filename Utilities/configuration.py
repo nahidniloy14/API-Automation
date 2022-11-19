@@ -1,15 +1,18 @@
 import configparser
+
+import mysql
 import mysql.connector
 
-
+#JSON
 def getConfig():
-    config = configparser.ConfigParser()
-    config.read('utilities/properties.ini')
+    config = configparser.ConfigParser()  # this config variable can now drive all our ini files
+    config.read("SQL/PMO/utilities/properties.ini")  # copy the path of the ini file
     return config
 
 
+#SQL
 connect_config = {
-    'user':getConfig()['SQL']['user'],
+    'user': getConfig()['SQL']['user'],
     'password': getConfig()['SQL']['password'],
     'host': getConfig()['SQL']['host'],
     'database': getConfig()['SQL']['database'],
@@ -27,10 +30,10 @@ def getConnection():
     except configparser.Error as e:
         print(e)
 
-def getQuery(query):
+#SQL.Integrate database using API
+def getQuery():
     conn=getConnection()
     cursor=conn.cursor()
-    cursor.execute(query)
-    rowDB=cursor.fetchone()
-    conn.close()
-    return rowDB
+    cursor.execute()
+    response=cursor.fetchone()
+    return response

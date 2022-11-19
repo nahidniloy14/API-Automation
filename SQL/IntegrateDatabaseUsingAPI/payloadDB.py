@@ -1,7 +1,8 @@
-from SQL.IntegrateDatabaseUsingAPI.configurationDB import *
+from Utilities.configuration import getQuery
+
 
 def buildPayloadFromDB(query):
-    row=getQuery(query)
+    row=getQuery()
     addbody={} #empty dictionary
     #add values in the dictionary
     addbody['name']= row[0]
