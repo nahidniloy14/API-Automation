@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="pythonProject" />
     <orderEntry type="module" module-name="BDD Framework" />
+    <orderEntry type="module" module-name="BackEndAutomation" />
   </component>
 </module>

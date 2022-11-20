@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/API AUTOMATION.iml" filepath="$PROJECT_DIR$/.idea/API AUTOMATION.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../pythonProject/BDD Framework/.idea/BDD Framework.iml" filepath="$PROJECT_DIR$/../../pythonProject/BDD Framework/.idea/BDD Framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../Code/BackEndAutomation/.idea/BackEndAutomation.iml" filepath="$PROJECT_DIR$/../../../../../Code/BackEndAutomation/.idea/BackEndAutomation.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../pythonProject/.idea/pythonProject.iml" filepath="$PROJECT_DIR$/../../pythonProject/.idea/pythonProject.iml" />
     </modules>
   </component>
