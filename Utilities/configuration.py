@@ -37,3 +37,4 @@ def getQuery():
     cursor.execute()
     response=cursor.fetchone()
     return response
+
